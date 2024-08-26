@@ -1,0 +1,724 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.welcome-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    /* لون الخلفية */
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.welcome-screen2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    /* لون الخلفية */
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+
+.welcome-screen h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-screen2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    /* لون الخلفية */
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+.welcome-screen img {
+
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.welcome-screen2 img {
+
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.loader {
+    border: 8px solid #ff0000;
+    border-radius: 50%;
+    border-top: 8px solid #ffffff;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 1rem;
+}
+
+.loader2 {
+    border: 8px solid #ff0000;
+    border-radius: 50%;
+    border-top: 8px solid #ffffff;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar {
+    background-color: rgb(223, 13, 13);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    flex-wrap: wrap;
+    /* يسمح للعنصر بالتفاف عند الحاجة */
+}
+
+.navbar .logo img {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.menu-btn {
+    display: none;
+    /* إخفاء الزر في الشاشات الكبيرة */
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 25px;
+}
+
+.bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    /* تغيير اللون إلى الأسود */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-btn.active .bar1 {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-btn.active .bar2 {
+    opacity: 0;
+}
+
+.menu-btn.active .bar3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-itm {
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+.navbar .list a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.navbar .nav-itm:hover {
+    background-color: rgb(231, 172, 172);
+}
+
+.abd img {
+    height: 350px;
+}
+
+
+section {
+    padding: 20px;
+    direction: rtl;
+}
+
+.home img {
+    width: 100%;
+    height: 100%;
+}
+
+.abd h3 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.abdo h3 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.model {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+
+.model h3 .model input {
+    flex: 1 1 45px;
+    margin: 5px;
+}
+
+.model input {
+    width: calc(100% - 10px);
+}
+
+/* تصميم متجاوب للشاشات المتوسطة والصغيرة */
+.abd11 h3 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.abd11 img {
+    width: 100%;
+    height: 100%;
+}
+
+.abd11 div {
+    background-color: red;
+    margin-right: 40px;
+}
+
+.ac1 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.ac1 h3 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.ac1 h4 {
+    background-color: red;
+    padding: 20px;
+    text-align: center;
+}
+
+.ac1 button {
+    box-shadow: rgb(103, 165, 111);
+    background-color: rgb(255, 255, 255);
+
+}
+
+.ac1 button:hover {
+    background-color: rgb(170, 60, 16);
+
+}
+
+.width-hr {
+
+    background-color: white;
+    height: 2px;
+    ;
+}
+
+@media (max-width: 890px) {
+    .menu-btn {
+        display: block;
+        /* عرض الزر على الشاشات الصغيرة */
+    }
+
+    .list {
+        display: none;
+        /* إخفاء القائمة على الشاشات الصغيرة */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(248, 247, 246);
+        position: absolute;
+        bottom: 0;
+        /* تحديد الموضع من الأسفل */
+        transform: translateY(100%);
+        /* تحريك العنصر إلى أسفل */
+        right: 0;
+        z-index: 1000;
+    }
+
+    .list.active {
+        display: flex;
+        /* عرض القائمة عند النقر على الزر */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar .logo {
+        margin-right: auto;
+    }
+
+    body {
+        background-color: aliceblue;
+    }
+
+    .navbar {
+        background-color: bisque;
+    }
+
+    .navbar list a {
+        color: #000;
+    }
+
+    .navbar .nav-itm:hover {
+        background-color: aqua;
+    }
+
+    .list a {
+        font-size: 20px;
+        /* تقليل حجم النص لتناسب الشاشات الأصغر */
+    }
+
+    .navbar .nav-itm {
+        padding: 10px 0;
+        /* تقليل التباعد بين العناصر */
+    }
+}
+
+
+
+.building-company-section {
+    background-color: red;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: right;
+}
+
+.content a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.learn-more {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container,
+    .content {
+        max-width: 100%;
+    }
+
+    .content {
+        padding: 20px 0;
+    }
+}
+
+
+
+footer {
+    background-color: #fff;
+    color: red;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-content h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 10px 0 20px;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: red;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid red;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-nav a {
+    color: red;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    background-color: red;
+    text-align: center;
+    color: #b20000;
+    /* اللون الأحمر المميز للهلال الأحمر */
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content h3 {
+    margin-top: 0;
+    color: #b20000;
+}
+
+.news-content p {
+    margin: 10px 0;
+}
+
+.news-content a {
+    text-decoration: none;
+    color: #b20000;
+    font-weight: bold;
+}
+
+
+/*NEWS CARD*/
+.news-card-container {
+    display: flex;
+    justify-content: space-between;
+    /* لضمان المسافة المتساوية بين البطاقات */
+    gap: 20px;
+    /* المسافة بين البطاقات */
+    flex-wrap: wrap;
+    /* لتجاوز البطاقات في حالة عدم وجود مساحة كافية */
+    padding: 20px;
+}
+
+.news-card {
+    flex: 1 1 300px;
+    /* تتيح للبطاقة أن تأخذ مساحة مرنة تصل إلى 300 بكسل */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    position: relative;
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+.news-card-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-body h3 {
+    margin: 0 0 15px;
+    font-size: 1.6em;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+}
+
+.card-body p {
+    margin: 0 0 20px;
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    bor
+}
+
+.more-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 30px;
+    /* شكل دائري للزر */
+    background: linear-gradient(to right, #ff5722, #e64a19);
+    /* تدرج لوني جذاب */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    /* تمييز الزر بحافة شفافة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.more-btn:hover,
+.more-btn:focus {
+    background: linear-gradient(to right, #e64a19, #ff5722);
+    /* تغيير التدرج عند التمرير */
+    transform: scale(1.05);
+    /* تكبير الزر قليلاً عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* إضافة ظل عند التمرير */
+    border-color: #fff;
+    /* تغيير لون الحافة عند التمرير */
+}
+
+.more-btn:active {
+    background: #ff5722;
+    /* تغيير اللون عند الضغط */
+    transform: scale(1);
+    /* إعادة الزر إلى حجمه الأصلي عند الضغط */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* تقليل الظل عند الضغط */
+}
+
+
+
+/* تنسيق عنوان القسم */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* تنسيق مجموعة البطاقات */
+.custom-awareness-card-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* تنسيق كل بطاقة */
+.custom-awareness-card {
+    flex: 1 1 calc(33.333% - 20px);
+    /* يجعل البطاقات تتوزع بالتساوي في الصف */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+/* تنسيق الصورة داخل البطاقة */
+.custom-card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #eee;
+}
+
+/* تنسيق جسم البطاقة */
+.custom-card-body {
+    padding: 20px;
+    text-align: right;
+    direction: rtl;
+    /* لضبط النصوص بالعربية */
+}
+
+/* تنسيق عنوان البطاقة */
+.custom-card-title {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* تنسيق نص البطاقة */
+.custom-card-text {
+    font-size: 1em;
+    ض color: #555;
+    line-height: 1.6;
+}
+
+/* تنسيق النص الثانوي */
+.custom-text-body-secondary {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* تأثير الإضاءة على الزوايا عند التمرير */
+.custom-awareness-card:hover {
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8);
+    /* تأثير الإضاءة على الزوايا */
+}
